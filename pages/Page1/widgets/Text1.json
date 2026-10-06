@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -40,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 43,
   "shouldTruncate": false,
-  "text": "Hello Hurensohn",
+  "text": "sudo rm -rf {{}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 43,
