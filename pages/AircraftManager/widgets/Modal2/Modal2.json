@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 520,
+  "bottomRow": 270,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 520,
+      "bottomRow": 270,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -37,7 +37,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "127npyeq0m",
+      "parentId": "zk2y69stzi",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -46,8 +46,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "qf62jarxra",
-      "widgetName": "Canvas1"
+      "widgetId": "bnwj1zit9z",
+      "widgetName": "Canvas2"
     }
   ],
   "detachFromLayout": true,
@@ -57,7 +57,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 520,
+  "height": 270,
   "isCanvas": true,
   "isLoading": false,
   "key": "u0gw02dy10",
@@ -78,7 +78,7 @@
   "topRow": 0,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "127npyeq0m",
-  "widgetName": "Modal1",
+  "widgetId": "zk2y69stzi",
+  "widgetName": "Modal2",
   "width": 456
 }
