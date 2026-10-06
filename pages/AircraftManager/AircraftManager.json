@@ -1,6 +1,7 @@
 {
   "gitSyncId": "6ac513a76a6279e55cd72ded_83279480-ae26-4272-941c-515c7592ab4e",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "AircraftManager",
+    "slug": "aircraftmanager"
   }
 }
