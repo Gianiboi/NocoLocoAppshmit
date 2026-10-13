@@ -3,27 +3,30 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 13,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{UUID.generate()}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
   "key": "azlffblaek",
-  "label": "Max Number of Martians",
+  "label": "ID",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -46,9 +49,9 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "showStepArrows": false,
-  "topRow": 22,
+  "topRow": 6,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "xsycleu7i0",
-  "widgetName": "Input1Copy1"
+  "widgetId": "vdy80m0gah",
+  "widgetName": "AircraftIDField"
 }

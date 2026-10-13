@@ -30,7 +30,7 @@
   "mobileRightColumn": 3,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Modal1.name);}}",
+  "onClick": "{{showModal(AircraftModal.name).then(() => {\n  insert_aircraft.run();\n});}}",
   "parentColumnSpace": 30.3125,
   "parentId": "0",
   "parentRowSpace": 10,

@@ -3,27 +3,34 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
+  "bottomRow": 12,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{tbl_users.triggeredRow.name}}",
+  "displayName": "Input",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
+  "hideCard": false,
   "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f4dd498ee72f01127e5bfe3a1a8ad671.svg",
   "inputType": "TEXT",
+  "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
-  "key": "azlffblaek",
-  "label": "Origin",
+  "key": "iiegeibh6u",
+  "label": "Name",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -38,17 +45,37 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "originalBottomRow": 17,
+  "originalTopRow": 10,
   "parentColumnSpace": 6.9375,
-  "parentId": "qf62jarxra",
+  "parentId": "zey7dt9vs1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 62,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
   "showStepArrows": false,
-  "topRow": 30,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
+  "topRow": 5,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "dz99b6lp03",
-  "widgetName": "Input1Copy4"
+  "widgetId": "77ihxkcfxp",
+  "widgetName": "inp_name"
 }

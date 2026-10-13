@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 45,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -20,10 +20,10 @@
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "azlffblaek",
-  "label": "Name",
+  "label": "Destination",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -46,9 +46,9 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "showStepArrows": false,
-  "topRow": 14,
+  "topRow": 38,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "pw5slbaqcv",
-  "widgetName": "Input1Copy"
+  "widgetId": "d1gdvz8g81",
+  "widgetName": "AircraftDestinationField"
 }

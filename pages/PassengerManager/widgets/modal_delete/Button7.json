@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 21,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ef6usk5ha2",
+  "leftColumn": 47,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{remove_passenger.run({\n  \"rowIndex\": tbl_users.triggeredRow.rowIndex\n}).then(() => {\n  closeModal(modal_delete.name);\n  showAlert('Deleted passenger', 'info');\n}).catch(() => {\n  showAlert('Failed to delete passenger', 'error');\n});}}",
+  "originalBottomRow": 22,
+  "originalTopRow": 18,
+  "parentId": "6abjtvbahw",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Confirm",
+  "tooltip": "Deletes selected passenger",
+  "topRow": 17,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "wa88xp1e1e",
+  "widgetName": "Button7"
+}
