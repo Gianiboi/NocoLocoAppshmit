@@ -92,7 +92,7 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "Delete",
-      "onClick": "{{remove_aircraft.run()}}",
+      "onClick": "{{removeValue(currentItem.aircraftId);}}",
       "widgetId": ""
     }
   },
