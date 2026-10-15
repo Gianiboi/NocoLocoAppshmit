@@ -44,7 +44,7 @@
   "rightColumn": 59,
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "This action will permanently delete {{tbl_users.triggeredRow.name}}",
+  "text": "This action will permanently delete {{tbl_users.triggeredRow.passengername}}",
   "textAlign": "LEFT",
   "textColor": "#b91c1c",
   "topRow": 7,

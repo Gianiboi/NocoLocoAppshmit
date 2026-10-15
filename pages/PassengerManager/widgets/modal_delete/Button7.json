@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{remove_passenger.run({\n  \"rowIndex\": tbl_users.triggeredRow.rowIndex\n}).then(() => {\n  closeModal(modal_delete.name);\n  showAlert('Deleted passenger', 'info');\n}).catch(() => {\n  showAlert('Failed to delete passenger', 'error');\n});}}",
+  "onClick": "{{delete_passenger.run().then(() => {\n  closeModal(modal_delete.name);\n  showAlert('Deleted ' + tbl_users.triggeredRow.passengername, 'success');\n  fetch_passenger.run();\n}).catch(() => {\n  showAlert('Failed to delete passenger', 'error');\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "6abjtvbahw",

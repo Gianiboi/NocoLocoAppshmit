@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 12,
   "boxShadow": "none",
-  "defaultText": "{{UUID.generate()}}",
+  "defaultText": "{{tbl_users.triggeredRow.passengername}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,20 +18,15 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onSubmit"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": true,
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
   "key": "1n1rfxktoc",
-  "label": "ID",
+  "label": "Name",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -41,23 +36,23 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 12,
+  "mobileBottomRow": 19,
   "mobileLeftColumn": 1,
   "mobileRightColumn": 21,
-  "mobileTopRow": 5,
+  "mobileTopRow": 12,
   "needsErrorInfo": false,
-  "onSubmit": "{{Helpers.PassengerIDFieldonSubmit();}}",
   "parentColumnSpace": 6.9375,
-  "parentId": "y3ue4z98pu",
+  "parentId": "xsuregembg",
   "parentRowSpace": 10,
+  "regex": "[a-zA-Z0-9-_]{3,255}",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 45,
+  "rightColumn": 64,
   "showStepArrows": false,
   "topRow": 5,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "hg0zvh1rym",
-  "widgetName": "PassengerIDField"
+  "widgetId": "b28toy795x",
+  "widgetName": "editPassengerNameField"
 }
