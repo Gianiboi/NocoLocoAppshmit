@@ -1,0 +1,6 @@
+UPDATE public."boarding_history" SET
+    "got_off_at" = NOW()
+WHERE passenger = {{deboardPassengerSelect.selectedOptionValue}} AND got_off_at IS NULL;
+	
+-- Create a new history entry after unboarding
+INSERT INTO boarding_history (passenger) VALUES ({{deboardPassengerSelect.selectedOptionValue}});

@@ -1,0 +1,2 @@
+SELECT * FROM passenger p
+JOIN public.boarding_history bh ON p.passengerid = bh.passenger

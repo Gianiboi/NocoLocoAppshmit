@@ -1,0 +1,7 @@
+WITH new_passenger AS (
+  INSERT INTO passenger (passengername)
+  VALUES ({{PassengerNameField.text}})
+  RETURNING passengerid
+)
+INSERT INTO boarding_history (passenger)
+SELECT passengerid FROM new_passenger;
