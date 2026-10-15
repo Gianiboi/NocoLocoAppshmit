@@ -59,7 +59,8 @@
     }
   ],
   "currentItemsView": "{{[]}}",
-  "disableSelection": false,
+  "defaultSelectedItem": "/",
+  "disableSelection": true,
   "dynamicBindingPathList": [
     {
       "key": "currentItemsView"
@@ -98,7 +99,7 @@
   "itemSpacing": 8,
   "key": "lih998m1gi",
   "leftColumn": 26,
-  "listData": "{{list_mothership.data}}",
+  "listData": "{{get_motherships.data}}",
   "mainCanvasId": "3sq527lhjr",
   "mainContainerId": "l8p5als9n3",
   "minWidth": 450,
@@ -113,12 +114,13 @@
   "parentColumnSpace": 30.3125,
   "parentId": "0",
   "parentRowSpace": 10,
-  "primaryKeys": "{{MothershipList.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
+  "primaryKeys": "{{MothershipList.listData.map((currentItem, currentIndex) => currentItem[\"mothershipid\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
   "rightColumn": 50,
   "selectedItemView": "{{{}}}",
+  "serverSidePagination": false,
   "templateHeight": 160,
   "topRow": 8,
   "triggeredItemView": "{{{}}}",

@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "Origin: {{currentItem.aircraftOrigin}}",
+  "text": "Origin: {{getOriginName.data.filter((aircraft) => aircraft.aircraftid == currentItem.aircraftid).map((mothership) => mothership.mothershipname)}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 5,

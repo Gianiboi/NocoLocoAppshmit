@@ -76,7 +76,7 @@
     "dynamicBindingPathList": [],
     "name": "get_aircraft_in_mothership",
     "pageId": "AircraftManager",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

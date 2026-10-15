@@ -6,7 +6,7 @@
   "borderWidth": "1",
   "bottomRow": 31,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "cardData": {},
+  "cardData": "",
   "childStylesheet": {
     "footerAction": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
@@ -76,6 +76,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "cardData"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "footerActions.footerAction2.onClick"
@@ -92,7 +97,7 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "Delete",
-      "onClick": "{{removeValue(currentItem.aircraftId);}}",
+      "onClick": "{{removeValue(currentItem.aircraftId).then(() => {\n  showAlert('SUCCESS', 'success');\n}).catch(() => {\n  showAlert('ERROR', 'error');\n});}}",
       "widgetId": ""
     }
   },
@@ -150,8 +155,8 @@
   "showHeader": true,
   "showHeaderDivider": true,
   "showMenu": false,
-  "subtitle": "{{currentItem.aircraftId}}",
-  "title": "{{currentItem.aircraftName}}",
+  "subtitle": "{{currentItem.aircraftid}}",
+  "title": "{{currentItem.aircraftname}}",
   "topRow": 0,
   "type": "CARD_WIDGET",
   "version": 1,
