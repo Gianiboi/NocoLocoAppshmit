@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 13,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -23,7 +23,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "azlffblaek",
-  "label": "Name",
+  "label": "ID",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -45,10 +45,11 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 61,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 14,
+  "topRow": 6,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "pw5slbaqcv",
-  "widgetName": "Input1Copy"
+  "widgetId": "vdy80m0gah",
+  "widgetName": "ID"
 }

@@ -4,8 +4,8 @@
   "bottomRow": 50,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonStyle": "PRIMARY_BUTTON",
-  "buttonVariant": "PRIMARY",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -15,29 +15,35 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "r78ps2kxkb",
-  "leftColumn": 47,
+  "leftColumn": 31,
   "minWidth": 120,
   "mobileBottomRow": 22,
-  "mobileLeftColumn": 47,
-  "mobileRightColumn": 63,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
+  "onClick": "{{closeModal(Create_Aircraft.name);}}",
   "parentId": "qf62jarxra",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 63,
-  "text": "Confirm",
+  "rightColumn": 47,
+  "text": "Close",
   "topRow": 46,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "j3zzy9hfar",
-  "widgetName": "Button2"
+  "widgetId": "cpcegdmql6",
+  "widgetName": "Close"
 }

@@ -31,7 +31,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(Modal1.name);}}",
+  "onClick": "{{closeModal(Create_Aircraft.name);}}",
   "parentId": "qf62jarxra",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -40,5 +40,5 @@
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "kjsdpxrget",
-  "widgetName": "IconButton2"
+  "widgetName": "X"
 }

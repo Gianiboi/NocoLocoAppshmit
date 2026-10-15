@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 45,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -23,7 +23,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "azlffblaek",
-  "label": "ID",
+  "label": "Destination",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -46,9 +46,9 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "showStepArrows": false,
-  "topRow": 6,
+  "topRow": 38,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "vdy80m0gah",
-  "widgetName": "Input1"
+  "widgetId": "d1gdvz8g81",
+  "widgetName": "Destination"
 }

@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 37,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -23,7 +23,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "azlffblaek",
-  "label": "Max Number of Martians",
+  "label": "Origin",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -46,9 +46,9 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "showStepArrows": false,
-  "topRow": 22,
+  "topRow": 30,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "xsycleu7i0",
-  "widgetName": "Input1Copy1"
+  "widgetId": "dz99b6lp03",
+  "widgetName": "Origin"
 }
