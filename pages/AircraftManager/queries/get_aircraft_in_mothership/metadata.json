@@ -20,7 +20,9 @@
           }
         },
         "projection": {
-          "data": []
+          "data": [
+            "aircraftName"
+          ]
         },
         "queryFormat": {
           "data": "ROWS"
@@ -54,7 +56,7 @@
               {
                 "condition": "EQ",
                 "key": "aircraftOrigin",
-                "value": "Mothership.id"
+                "value": "currentItem.id"
               }
             ],
             "condition": "AND"
