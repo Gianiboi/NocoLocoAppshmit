@@ -29,7 +29,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{\n\t\"passenger\": {{PassengerIDField.text}},\n\t\"aircraft\": {{AircraftField.selectedOptionValue}},\n\t\"boarded\": true,\n\t\"timestamp\": {{Temporal.Now.instant()}}\n}"
+          "data": "{\n\t\"passenger\": {{tbl_users.triggeredRow.id}},\n\t\"aircraft\": {{AircraftField.selectedOptionValue}},\n\t\"boarded\": true,\n\t\"timestamp\": {{Temporal.Now.instant()}}\n}"
         },
         "sheetName": {
           "data": "Boarding History"

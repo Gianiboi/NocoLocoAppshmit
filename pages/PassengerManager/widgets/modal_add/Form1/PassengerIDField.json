@@ -46,7 +46,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onSubmit": "{{JSObject1.PassengerIDFieldonSubmit();}}",
+  "onSubmit": "{{Helpers.PassengerIDFieldonSubmit();}}",
   "parentColumnSpace": 6.9375,
   "parentId": "y3ue4z98pu",
   "parentRowSpace": 10,

@@ -29,7 +29,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{\n\t\"aircraftId\": {{ AircraftIDField.text }},\n\t\"aircraftName\": {{ AircraftNameField.text }},\n\t\"aircraftCapacity\": {{ AircraftMaxMartianField.text }},\n\t\"aircraftOrigin\": {{ AircraftOriginField.text }},\n\t\"aircraftDestination\": {{ AircraftDestinationField.text}}\n}"
+          "data": "{\n\t\"aircraftId\": {{ AircraftIDField.text }},\n\t\"aircraftName\": {{ AircraftNameField.text }},\n\t\"aircraftCapacity\": {{ AircraftMaxMartianField.text }},\n\t\"aircraftOrigin\": {{ AircraftOriginField.text }},\n\t\"aircraftDestination\": {{ AircraftDestinationField.text}},\n\t\"aircraftCurrentlyBoarded\": 0\n}"
         },
         "sheetName": {
           "data": "Aircraft"

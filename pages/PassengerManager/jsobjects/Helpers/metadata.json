@@ -1,8 +1,8 @@
 {
   "gitSyncId": "6ace872dbd463d6ba02c74f8_8979d5a6-8c80-4899-b771-b5b1d7a9acfd",
-  "id": "PassengerManager_JSObject1",
+  "id": "PassengerManager_Helpers",
   "unpublishedCollection": {
-    "name": "JSObject1",
+    "name": "Helpers",
     "pageId": "PassengerManager",
     "pluginId": "js-plugin",
     "pluginType": "JS",

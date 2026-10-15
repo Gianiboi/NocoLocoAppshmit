@@ -31,7 +31,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{insert_passenger.run().then(() => {\n  closeModal(modal_add.name);\n  showAlert('Added ' + PassengerNameField.text, 'success');\n  JSObject1.PassengerIDFieldonSubmit();\n}).catch(() => {\n  showAlert('Failed to add passenger', 'error');\n});}}",
+  "onClick": "{{insert_passenger.run().then(() => {\n  closeModal(modal_add.name);\n  showAlert('Added ' + PassengerNameField.text, 'success');\n  Helpers.PassengerIDFieldonSubmit();\n}).catch(() => {\n  showAlert('Failed to add passenger', 'error');\n});}}",
   "parentId": "y3ue4z98pu",
   "placement": "CENTER",
   "recaptchaType": "V3",
