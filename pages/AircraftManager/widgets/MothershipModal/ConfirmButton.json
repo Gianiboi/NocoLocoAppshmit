@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{insert_mothership.run()}}",
+  "onClick": "{{insert_mothership.run().then(() => {\n  showAlert('Added ' + MothershipNameField.text, 'success');\n}).catch(() => {\n  showAlert('Failed to create Mothership', 'error');\n});}}",
   "parentId": "bnwj1zit9z",
   "placement": "CENTER",
   "recaptchaType": "V3",
