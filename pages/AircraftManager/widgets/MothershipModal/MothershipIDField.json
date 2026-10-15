@@ -23,7 +23,7 @@
   "inputType": "TEXT",
   "isDisabled": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
   "key": "azlffblaek",
   "label": "ID",
