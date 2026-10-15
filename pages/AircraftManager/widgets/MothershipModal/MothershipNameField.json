@@ -20,7 +20,7 @@
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "azlffblaek",
   "label": "Name",
@@ -50,5 +50,5 @@
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "0uwd4lbnhz",
-  "widgetName": "Input1Copy3"
+  "widgetName": "MothershipNameField"
 }

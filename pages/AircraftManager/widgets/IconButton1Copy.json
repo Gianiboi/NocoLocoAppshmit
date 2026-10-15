@@ -30,7 +30,7 @@
   "mobileRightColumn": 3,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Modal2.name);}}",
+  "onClick": "{{showModal(MothershipModal.name);}}",
   "parentColumnSpace": 30.3125,
   "parentId": "0",
   "parentRowSpace": 10,
