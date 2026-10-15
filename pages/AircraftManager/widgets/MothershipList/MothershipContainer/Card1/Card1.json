@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 30,
+  "bottomRow": 31,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cardData": {},
   "childStylesheet": {
@@ -15,7 +15,7 @@
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 200,
+      "bottomRow": 210,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
