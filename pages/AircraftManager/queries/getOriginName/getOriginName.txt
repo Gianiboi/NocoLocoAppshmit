@@ -1,0 +1,4 @@
+SELECT aircraft.aircraftid, mothership.mothershipname
+FROM mothership
+JOIN aircraft
+  ON mothership.mothershipid = aircraft.aircraftorigin

@@ -1,0 +1,6 @@
+INSERT INTO aircraft (aircraftname, aircraftcapacity, aircraftorigin, aircraftdestination, aircraftcurrentlyboarded)
+VALUES ({{AircraftNameField.text}},
+				{{AircraftMaxMartianField.text}},
+				{{AircraftOriginField.selectedOptionValue}},
+				{{AircraftDestinationField.selectedOptionValue}},
+				0);

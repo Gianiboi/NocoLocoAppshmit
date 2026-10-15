@@ -6,7 +6,7 @@
   "borderWidth": "1",
   "bottomRow": 31,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "cardData": {},
+  "cardData": "",
   "childStylesheet": {
     "footerAction": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
@@ -76,7 +76,16 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "cardData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "footerActions.footerAction2.onClick"
+    }
+  ],
   "expandCollapseEnabled": false,
   "flexVerticalAlignment": "stretch",
   "footerActions": {
@@ -88,6 +97,7 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "Delete",
+      "onClick": "{{delete_mothership.run().then(() => {\n  showAlert('cock', 'success');\n}).catch(() => {\n  showAlert('ball', 'error');\n});}}",
       "widgetId": ""
     }
   },
@@ -142,9 +152,9 @@
   "showFooterDivider": true,
   "showHeader": true,
   "showHeaderDivider": true,
-  "showMenu": true,
-  "subtitle": "{{currentItem.id}}",
-  "title": "{{currentItem.name}}",
+  "showMenu": false,
+  "subtitle": "{{currentItem.mothershipid}}",
+  "title": "{{currentItem.mothershipname}}",
   "topRow": 0,
   "type": "CARD_WIDGET",
   "version": 1,
