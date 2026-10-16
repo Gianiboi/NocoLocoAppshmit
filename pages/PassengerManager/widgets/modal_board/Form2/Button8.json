@@ -31,7 +31,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{board_passenger.run().then(() => {\n  closeModal(modal_board.name);\n  showAlert(tbl_users.triggeredRow.name + ' boarded ' + tbl_users.triggeredRow[\"Aircraft Name\"], 'success');\n}).catch(() => {\n  showAlert('Failed to board passenger', 'error');\n});}}",
+  "onClick": "{{board_passenger.run().then(() => {\n  closeModal(modal_board.name);\n  showAlert(boardPassengerSelect.selectedOptionLabel + ' boarded ' + boardAircraftSelect.selectedOptionLabel, 'success');\n}).catch(() => {\n  showAlert('Failed to board passenger', 'error');\n});}}",
   "originalBottomRow": 25,
   "originalTopRow": 21,
   "parentId": "lpl311mefn",

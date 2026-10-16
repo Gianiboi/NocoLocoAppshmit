@@ -36,14 +36,14 @@
     "customColumn2",
     "customColumn1"
   ],
-  "columnUpdatedAt": 1792100314174,
+  "columnUpdatedAt": 1792156561155,
   "columnWidthMap": {
     "aircraft": 199,
     "category": 103,
     "country": 139,
     "created": 140,
     "customColumn1": 274,
-    "customColumn2": 104,
+    "customColumn2": 95,
     "customColumn3": 105,
     "dob": 159,
     "email": 240,
@@ -54,7 +54,7 @@
     "last_name": 141,
     "name": 153,
     "passengerid": 335,
-    "passengername": 934,
+    "passengername": 378,
     "priority": 93,
     "status": 165
   },
@@ -306,7 +306,7 @@
     "Display"
   ],
   "textSize": "0.875rem",
-  "topRow": 17,
+  "topRow": 8,
   "totalRecordsCount": "0",
   "type": "TABLE_WIDGET_V2",
   "version": 2,

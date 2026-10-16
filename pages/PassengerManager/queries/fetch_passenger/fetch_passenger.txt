@@ -1,1 +1,2 @@
-SELECT * FROM passenger
+SELECT passengerid,passengername FROM passenger
+WHERE is_deleted = FALSE;

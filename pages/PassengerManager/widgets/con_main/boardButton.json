@@ -31,7 +31,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(modal_board.name);}}",
+  "onClick": "{{showModal(modal_board.name);\nfetch_aircraft.run();\nfetch_deboardedPassenger.run()}}",
   "parentColumnSpace": 23.0869140625,
   "parentId": "t75zgockkp",
   "parentRowSpace": 10,

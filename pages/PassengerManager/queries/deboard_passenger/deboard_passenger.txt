@@ -1,6 +1,12 @@
-UPDATE public."boarding_history" SET
-    "got_off_at" = NOW()
-WHERE passenger = {{deboardPassengerSelect.selectedOptionValue}} AND got_off_at IS NULL;
-	
+WITH aircraft AS (
+    UPDATE public."boarding_history"
+    SET "got_off_at" = NOW()
+    WHERE passenger = {{deboardPassengerSelect.selectedOptionValue}} AND got_off_at IS NULL
+    RETURNING aircraft
+)
+UPDATE public."aircraft" AS a
+SET "aircraftcurrentlyboarded" = a."aircraftcurrentlyboarded" - 1
+WHERE a."aircraftid" IN (SELECT aircraft FROM aircraft);
+
 -- Create a new history entry after unboarding
 INSERT INTO boarding_history (passenger) VALUES ({{deboardPassengerSelect.selectedOptionValue}});

@@ -13,20 +13,22 @@
       "key": "borderRadius"
     },
     {
+      "key": "optionLabel"
+    },
+    {
       "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
+      "key": "optionLabel"
+    },
+    {
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onFilterUpdate"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -47,8 +49,8 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 20,
   "needsErrorInfo": false,
-  "onFilterUpdate": "{{find_aircraft.run()}}",
-  "optionLabel": "aircraftname",
+  "onFilterUpdate": "",
+  "optionLabel": "{{boardAircraftSelect.sourceData.map((item) => ( item.aircraftname + \" (\" + item.aircraftcurrentlyboarded + \"/\" + item.aircraftcapacity + \")\" ))}}",
   "optionValue": "aircraftid",
   "originalBottomRow": 20,
   "originalTopRow": 13,

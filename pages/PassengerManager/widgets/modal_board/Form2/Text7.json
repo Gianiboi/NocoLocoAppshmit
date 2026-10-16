@@ -11,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -41,7 +38,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 53,
   "shouldTruncate": false,
-  "text": "Board {{tbl_users.triggeredRow.name}}",
+  "text": "Board Passenger",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,

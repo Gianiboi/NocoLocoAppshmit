@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"boarding_history\" SET\n    \"got_off_at\" = NOW()\nWHERE passenger = {{deboardPassengerSelect.selectedOptionValue}} AND got_off_at IS NULL;\n\t\n-- Create a new history entry after unboarding\nINSERT INTO boarding_history (passenger) VALUES ({{deboardPassengerSelect.selectedOptionValue}});",
+      "body": "WITH aircraft AS (\n    UPDATE public.\"boarding_history\"\n    SET \"got_off_at\" = NOW()\n    WHERE passenger = {{deboardPassengerSelect.selectedOptionValue}} AND got_off_at IS NULL\n    RETURNING aircraft\n)\nUPDATE public.\"aircraft\" AS a\nSET \"aircraftcurrentlyboarded\" = a.\"aircraftcurrentlyboarded\" - 1\nWHERE a.\"aircraftid\" IN (SELECT aircraft FROM aircraft);\n\n-- Create a new history entry after unboarding\nINSERT INTO boarding_history (passenger) VALUES ({{deboardPassengerSelect.selectedOptionValue}});",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": " UPDATE public.\"boarding_history\" SET\n\t\t\"boarded_at\" = {{Temporal.Now.instant()}},\n\t\t\"aircraft\" = {{boardAircraftSelect.selectedOptionValue}}\nWHERE passenger = {{boardPassengerSelect.selectedOptionValue}} AND boarded_at IS NULL;",
+      "body": "UPDATE public.\"boarding_history\" SET\n\t\t\"boarded_at\" = NOW(),\n\t\t\"aircraft\" = {{boardAircraftSelect.selectedOptionValue}}\nWHERE passenger = {{boardPassengerSelect.selectedOptionValue}} AND boarded_at IS NULL;\n\nUPDATE public.\"aircraft\" SET\n\t\t\"aircraftcurrentlyboarded\" = aircraftcurrentlyboarded + 1\nWHERE aircraftid = {{boardAircraftSelect.selectedOptionValue}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

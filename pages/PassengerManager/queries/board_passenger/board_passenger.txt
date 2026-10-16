@@ -1,4 +1,8 @@
- UPDATE public."boarding_history" SET
-		"boarded_at" = {{Temporal.Now.instant()}},
+UPDATE public."boarding_history" SET
+		"boarded_at" = NOW(),
 		"aircraft" = {{boardAircraftSelect.selectedOptionValue}}
 WHERE passenger = {{boardPassengerSelect.selectedOptionValue}} AND boarded_at IS NULL;
+
+UPDATE public."aircraft" SET
+		"aircraftcurrentlyboarded" = aircraftcurrentlyboarded + 1
+WHERE aircraftid = {{boardAircraftSelect.selectedOptionValue}};

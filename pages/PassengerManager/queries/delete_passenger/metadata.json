@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM passenger WHERE passengerid = {{tbl_users.triggeredRow.passengerid}}",
+      "body": "UPDATE public.\"passenger\" SET\n    \"is_deleted\" = TRUE\n  WHERE passengerid = {{ tbl_users.triggeredRow.passengerid}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
