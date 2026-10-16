@@ -1,1 +1,2 @@
-SELECT mothershipname FROM mothership;
+SELECT mothershipname FROM mothership
+WHERE is_deleted = FALSE;

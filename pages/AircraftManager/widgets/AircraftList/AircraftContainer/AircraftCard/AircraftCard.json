@@ -97,7 +97,7 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "Delete",
-      "onClick": "{{removeValue(currentItem.aircraftId).then(() => {\n  showAlert('SUCCESS', 'success');\n}).catch(() => {\n  showAlert('ERROR', 'error');\n});}}",
+      "onClick": "{{delete_aircraft.run().then(() => {\n  showAlert('SUCCESS', 'success');\n}).catch(() => {\n  showAlert('ERROR', 'error');\n});}}",
       "widgetId": ""
     }
   },

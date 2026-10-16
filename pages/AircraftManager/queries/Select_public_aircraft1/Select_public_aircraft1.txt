@@ -2,3 +2,4 @@ SELECT
   *
 FROM
   public.aircraft
+	WHERE is_deleted = FALSE;
