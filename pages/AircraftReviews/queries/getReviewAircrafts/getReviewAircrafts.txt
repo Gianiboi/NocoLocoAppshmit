@@ -1,0 +1,6 @@
+SELECT
+    aircraftid,
+    aircraftname
+FROM public.aircraft
+WHERE is_deleted = false
+ORDER BY aircraftname;

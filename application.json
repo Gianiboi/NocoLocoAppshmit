@@ -1,5 +1,8 @@
 {
   "appIsExample": false,
+  "appLayout": {
+    "type": "FLUID"
+  },
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "color": "#F4FFDE",
@@ -12,6 +15,13 @@
     {
       "id": "AircraftManager",
       "isDefault": true
+    },
+    {
+      "id": "AircraftReviews",
+      "isDefault": false
     }
-  ]
+  ],
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  }
 }
