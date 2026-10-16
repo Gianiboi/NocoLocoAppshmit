@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6ad0d355f6bb55ee9d3b0a15_ac6819cb-aa2b-4193-b2f5-622ff849d81e",
-  "id": "AircraftManager_getAircraftName",
+  "gitSyncId": "6ad0d355f6bb55ee9d3b0a15_50d6353d-3723-407c-ae1e-682b6d377433",
+  "id": "AircraftManager_delete_aircraft",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM <<your_table_name>> LIMIT 10;\n\n-- Please enter a valid table name and hit RUN\n",
+      "body": "UPDATE public.aircraft SET\n  is_deleted=TRUE\n  WHERE aircraftid = {{AircraftList.triggeredItem.aircraftid}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,8 +22,12 @@
       "name": "DataShmit",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "getAircraftName",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "delete_aircraft",
     "pageId": "AircraftManager",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

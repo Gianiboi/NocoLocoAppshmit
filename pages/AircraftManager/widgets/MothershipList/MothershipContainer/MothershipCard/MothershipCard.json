@@ -97,7 +97,7 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "Delete",
-      "onClick": "{{delete_mothership.run().then(() => {\n  showAlert('cock', 'success');\n}).catch(() => {\n  showAlert('ball', 'error');\n});}}",
+      "onClick": "{{delete_mothership.run().then(() => {\n  showAlert('SUCCESS', 'success');\n}).catch(() => {\n  showAlert('ERROR', 'error');\n});}}",
       "widgetId": ""
     }
   },

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT aircraft.aircraftid, mothership.mothershipname\nFROM mothership\nJOIN aircraft\n  ON mothership.mothershipid = aircraft.aircraftdestination",
+      "body": "SELECT aircraft.aircraftid, mothership.mothershipname\nFROM mothership\nJOIN aircraft\n  ON mothership.mothershipid = aircraft.aircraftdestination\n\tWHERE aircraft.is_deleted = FALSE;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

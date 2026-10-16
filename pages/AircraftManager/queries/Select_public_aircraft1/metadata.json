@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  *\nFROM\n  public.aircraft",
+      "body": "SELECT\n  *\nFROM\n  public.aircraft\n\tWHERE is_deleted = FALSE;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,11 +22,7 @@
       "name": "DataShmit",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "name": "Select_public_aircraft1",
     "pageId": "AircraftManager",
     "runBehaviour": "MANUAL",
