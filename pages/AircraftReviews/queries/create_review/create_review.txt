@@ -1,0 +1,22 @@
+INSERT INTO public.review (
+    aircraft,
+    reviewername,
+    passengercount,
+    "timestamp"
+)
+VALUES (
+    {{ this.params.aircraftId }}::uuid,
+    {{ this.params.reviewerName }},
+    (
+        SELECT COUNT(DISTINCT passenger)::integer
+        FROM public.boarding_history
+        WHERE aircraft = {{ this.params.aircraftId }}::uuid
+          AND boarded_at <= CURRENT_TIMESTAMP
+          AND (
+              got_off_at IS NULL
+              OR got_off_at > CURRENT_TIMESTAMP
+          )
+    ),
+    CURRENT_TIMESTAMP
+)
+RETURNING *;

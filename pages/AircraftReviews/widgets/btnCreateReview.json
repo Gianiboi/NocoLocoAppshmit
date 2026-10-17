@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 53,
+  "bottomRow": 54,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -12,21 +12,37 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{\n  !selectAircraft.selectedOptionValue ||\n  !inputReviewerName.text.trim()\n}}\n",
   "isLoading": false,
   "isVisible": true,
   "key": "okrzj1x3bg",
-  "leftColumn": 12,
+  "leftColumn": 21,
   "minWidth": 120,
   "mobileBottomRow": 71,
   "mobileLeftColumn": 13,
   "mobileRightColumn": 29,
   "mobileTopRow": 67,
   "needsErrorInfo": false,
+  "onClick": "{{\n  create_review.run({\n    aircraftId: selectAircraft.selectedOptionValue,\n    reviewerName: inputReviewerName.text.trim()\n  }).then(() => {\n    showAlert(\"Review successfully created!\", \"success\");\n    getReviews.run();\n  }).catch(() => {\n    showAlert(\"Error creating review!\", \"error\");\n  })\n}}\n",
   "parentColumnSpace": 12.390625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -35,9 +51,9 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 28,
+  "rightColumn": 37,
   "text": "Create Review",
-  "topRow": 49,
+  "topRow": 50,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "rz929ya6ii",

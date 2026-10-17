@@ -1,0 +1,13 @@
+SELECT
+    a.aircraftid,
+    a.aircraftname,
+    p.passengername,
+    bh.boarded_at
+FROM public.boarding_history bh
+JOIN public.aircraft a
+    ON a.aircraftid = bh.aircraft
+JOIN public.passenger p
+    ON p.passengerid = bh.passenger
+WHERE p.passengername = 'App Shmit'
+  AND bh.got_off_at IS NULL
+ORDER BY bh.boarded_at DESC;

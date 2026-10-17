@@ -1,0 +1,13 @@
+SELECT
+    r.reviewid,
+    r.aircraft,
+    a.aircraftname AS "Aircraft",
+    r.reviewername AS "Reviewer",
+    r.passengercount AS "Passengers",
+    r."timestamp" AS "Review Date"
+FROM public.review r
+LEFT JOIN public.aircraft a
+    ON a.aircraftid = r.aircraft
+WHERE r.is_deleted = false
+ORDER BY r."timestamp" DESC
+LIMIT 20;

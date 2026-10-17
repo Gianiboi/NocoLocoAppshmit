@@ -1,0 +1,13 @@
+UPDATE public.review
+SET is_deleted = true
+WHERE reviewid IN (
+    SELECT reviewid
+    FROM public.review
+    WHERE is_deleted = false
+      AND (
+          aircraft IS NULL
+          OR reviewername IS NULL
+          OR TRIM(reviewername) = ''
+      )
+)
+RETURNING reviewid, is_deleted;

@@ -1,0 +1,12 @@
+SELECT
+    reviewid,
+    aircraft,
+    reviewername,
+    passengercount,
+    "timestamp",
+    is_deleted
+FROM public.review
+WHERE aircraft IS NULL
+   OR reviewername IS NULL
+   OR TRIM(reviewername) = ''
+ORDER BY "timestamp" DESC;

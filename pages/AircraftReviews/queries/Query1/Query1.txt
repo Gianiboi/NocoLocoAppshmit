@@ -1,0 +1,12 @@
+UPDATE public.review
+SET is_deleted = true
+WHERE reviewid IN (
+    SELECT reviewid
+    FROM public.review
+    WHERE is_deleted = false
+      AND reviewername = 'Jun'
+      AND passengercount = 0
+    ORDER BY "timestamp" DESC
+    LIMIT 3
+)
+RETURNING reviewid, reviewername, passengercount, is_deleted;

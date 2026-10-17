@@ -1,0 +1,18 @@
+SELECT DISTINCT
+    r.reviewid,
+    p.passengerid,
+    p.passengername AS "Passenger",
+    r.reviewername AS "Reviewer",
+    r."timestamp" AS "Review Date"
+FROM public.review r
+JOIN public.boarding_history bh
+    ON bh.aircraft = r.aircraft
+JOIN public.passenger p
+    ON p.passengerid = bh.passenger
+WHERE r.reviewid = {{ this.params.reviewId }}::uuid
+  AND bh.boarded_at <= r."timestamp"
+  AND (
+      bh.got_off_at IS NULL
+      OR bh.got_off_at > r."timestamp"
+  )
+ORDER BY "Passenger";
