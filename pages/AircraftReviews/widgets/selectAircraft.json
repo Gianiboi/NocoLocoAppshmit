@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 40,
+  "bottomRow": 12,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "rightColumn": 39,
   "serverSideFiltering": false,
   "sourceData": "{{\n  (getReviewAircrafts.data || []).map(aircraft => ({\n    name: aircraft.aircraftname + \" (\" + aircraft.aircraftid.substring(0, 8) + \")\",\n    code: aircraft.aircraftid\n  }))\n}}\n",
-  "topRow": 33,
+  "topRow": 5,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "9m8lktaso1",
