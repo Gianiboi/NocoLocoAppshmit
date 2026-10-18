@@ -1,3 +1,2 @@
 INSERT INTO mothership (mothershipname)
-VALUES ({{MothershipNameField.text}})
-WHERE is_deleted = FALSE;
+VALUES ({{MothershipNameField.text}});

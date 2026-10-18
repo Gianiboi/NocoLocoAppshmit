@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{insert_aircraft.run().then(() => {\n  showAlert('Added ' + MothershipNameField.text, 'success');\n  closeModal(MothershipModal.name);\n}).catch(() => {\n  showAlert('Failed to create Mothership', 'error');\n});}}",
+  "onClick": "{{insert_aircraft.run().then(() => {\n  showAlert('Added ' + MothershipNameField.text, 'success');\n  closeModal(MothershipModal.name);\n  resetWidget(\"AircraftModal\", true);\n}).catch(() => {\n  showAlert('Failed to create Mothership', 'error');\n});}}",
   "parentId": "qf62jarxra",
   "placement": "CENTER",
   "recaptchaType": "V3",
