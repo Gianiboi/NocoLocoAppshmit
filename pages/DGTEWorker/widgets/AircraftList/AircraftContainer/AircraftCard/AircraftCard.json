@@ -1,0 +1,165 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 31,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "cardData": "",
+  "childStylesheet": {
+    "footerAction": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 250,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "uljajfq6l1",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 300,
+      "minWidth": 450,
+      "mobileBottomRow": 300,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 727.5,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "zxeab1zf6q",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 727.5,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "f1j1w65pdd",
+      "widgetName": "Canvas7"
+    }
+  ],
+  "defaultExpanded": true,
+  "defaultSelected": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "selectedAccentColor"
+    },
+    {
+      "key": "title"
+    },
+    {
+      "key": "subtitle"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "cardData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "footerActions.footerAction2.onClick"
+    }
+  ],
+  "expandCollapseEnabled": false,
+  "flexVerticalAlignment": "stretch",
+  "footerActions": {
+    "footerAction2": {
+      "buttonColor": "#ef4444",
+      "buttonVariant": "PRIMARY",
+      "id": "footerAction2",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "onClick": "{{delete_aircraft.run().then(() => {\n  showAlert('SUCCESS', 'success');\n}).catch(() => {\n  showAlert('ERROR', 'error');\n});}}",
+      "widgetId": ""
+    }
+  },
+  "hoverElevation": false,
+  "isCanvas": true,
+  "isClickable": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "evkleicm71",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "mediaHeight": 140,
+  "mediaObjectFit": "cover",
+  "mediaPosition": "NONE",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "First menu item",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Second menu item",
+      "widgetId": ""
+    }
+  },
+  "minDynamicHeight": 15,
+  "minWidth": 450,
+  "mobileBottomRow": 140,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 110,
+  "needsErrorInfo": false,
+  "originalBottomRow": 127,
+  "originalTopRow": 110,
+  "parentColumnSpace": 30.3125,
+  "parentId": "jna9t3docy",
+  "parentRowSpace": 10,
+  "positioning": "fixed",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "selectedAccentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "selectionEnabled": false,
+  "shouldScrollContents": true,
+  "showFooter": false,
+  "showFooterDivider": true,
+  "showHeader": true,
+  "showHeaderDivider": true,
+  "showMenu": false,
+  "subtitle": "{{currentItem.aircraftid}}",
+  "title": "{{currentItem.aircraftname}}",
+  "topRow": 0,
+  "type": "CARD_WIDGET",
+  "version": 1,
+  "widgetId": "zxeab1zf6q",
+  "widgetName": "AircraftCard"
+}

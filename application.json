@@ -19,6 +19,10 @@
     {
       "id": "AircraftReviews",
       "isDefault": false
+    },
+    {
+      "id": "DGTEWorker",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

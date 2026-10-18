@@ -1,0 +1,5 @@
+SELECT aircraft.aircraftid, mothership.mothershipname
+FROM mothership
+JOIN aircraft
+  ON mothership.mothershipid = aircraft.aircraftorigin
+	WHERE aircraft.is_deleted = FALSE;
