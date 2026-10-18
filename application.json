@@ -9,12 +9,12 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "PassengerManager",
-      "isDefault": false
-    },
-    {
       "id": "AircraftManager",
       "isDefault": true
+    },
+    {
+      "id": "PassengerManager",
+      "isDefault": false
     },
     {
       "id": "AircraftReviews",
