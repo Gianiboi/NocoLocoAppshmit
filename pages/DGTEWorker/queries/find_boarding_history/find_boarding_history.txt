@@ -1,0 +1,17 @@
+SELECT
+  a.aircraftname,
+  mo.mothershipname AS origin,
+  md.mothershipname AS destination,
+  bh.boarded_at,
+  bh.got_off_at
+FROM public.boarding_history AS bh
+JOIN public.aircraft AS a
+  ON a.aircraftid = bh.aircraft
+LEFT JOIN public.mothership AS mo
+  ON a.aircraftorigin = mo.mothershipid
+LEFT JOIN public.mothership AS md
+  ON a.aircraftdestination = md.mothershipid
+WHERE
+  bh.passenger = {{tbl_users.triggeredRow.passengerid}} AND bh.aircraft IS NOT NULL
+ORDER BY
+  bh.boarded_at DESC;

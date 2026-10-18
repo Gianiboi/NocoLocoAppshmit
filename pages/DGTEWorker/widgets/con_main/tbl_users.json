@@ -1,0 +1,264 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 72,
+  "boxShadow": "none",
+  "canFreezeColumn": true,
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "passengerid",
+    "passengername",
+    "customColumn2"
+  ],
+  "columnUpdatedAt": 1792330555033,
+  "columnWidthMap": {
+    "aircraft": 199,
+    "category": 103,
+    "country": 139,
+    "created": 140,
+    "customColumn1": 274,
+    "customColumn2": 95,
+    "customColumn3": 105,
+    "dob": 159,
+    "email": 240,
+    "first_name": 119,
+    "got_off_at": 253,
+    "id": 60,
+    "image": 78,
+    "last_name": 141,
+    "name": 153,
+    "passengerid": 335,
+    "passengername": 378,
+    "priority": 93,
+    "status": 165
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "displayName": "Table",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "primaryColumns.passengerid.computedValue"
+    },
+    {
+      "key": "primaryColumns.passengername.computedValue"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.customColumn2.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
+    },
+    {
+      "key": "primaryColumns.customColumn2.onClick"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "horizontalAlignment": "LEFT",
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSortable": false,
+  "isVisible": true,
+  "isVisibleDownload": false,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "p3wq3jzmwu",
+  "label": "Data",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 47,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 19,
+  "needsHeightForContent": true,
+  "onPageChange": "{{fetch_passengers.run()}}",
+  "onSearchTextChanged": "{{fetch_passengers.run()}}",
+  "originalBottomRow": 106,
+  "originalTopRow": 57,
+  "parentColumnSpace": 11.7392578125,
+  "parentId": "xvhxq4ugvu",
+  "parentRowSpace": 10,
+  "primaryColumnId": "passengerid",
+  "primaryColumns": {
+    "customColumn2": {
+      "alias": "History",
+      "allowCellWrapping": false,
+      "allowHeaderWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonColor": "{{tbl_users.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "SECONDARY",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "history",
+      "id": "customColumn2",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "History",
+      "labelColor": "#FFFFFF",
+      "menuItemsSource": "STATIC",
+      "notation": "standard",
+      "onClick": "{{showModal(modal_history.name);\nfind_boarding_history.run()}}",
+      "originalId": "customColumn2",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "passengerid": {
+      "alias": "passengerid",
+      "allowCellWrapping": false,
+      "allowHeaderWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = tbl_users.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"passengerid\"])) : passengerid })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "passengerid",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Passenger ID",
+      "notation": "standard",
+      "originalId": "passengerid",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "passengername": {
+      "alias": "passengername",
+      "allowCellWrapping": false,
+      "allowHeaderWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = tbl_users.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"passengername\"])) : passengername })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "passengername",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Passenger Name",
+      "notation": "standard",
+      "originalId": "passengername",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "tableData": "{{fetch_passenger.data}}",
+  "tags": [
+    "Suggested",
+    "Display"
+  ],
+  "textSize": "0.875rem",
+  "topRow": 8,
+  "totalRecordsCount": "0",
+  "type": "TABLE_WIDGET_V2",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "7x0l9d02a7",
+  "widgetName": "tbl_users"
+}
